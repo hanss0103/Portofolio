@@ -65,7 +65,7 @@ const Header = () => {
                     initial="initial"
                     animate="animate"
                 >
-                    PORTFOLIO
+                    PORTOFOLIO
                 </motion.h1>
 
                 <motion.div
