@@ -47,7 +47,7 @@ const Projects = () => {
                     transition={{ duration: 0.6 }}
                     className="text-3xl font-bold mb-12 text-center bg-gradient-to-r from-cyan-500 to-purple-500 bg-clip-text text-transparent"
                 >
-                    Projects
+                    Proyek
                 </motion.h2>
 
                 <div className="grid gap-8 md:grid-cols-2">
