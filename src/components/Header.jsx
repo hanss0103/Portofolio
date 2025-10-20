@@ -58,9 +58,9 @@ const Header = () => {
             animate="animate"
             variants={headerVariants}
         >
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between w-full">
                 <motion.h1
-                    className="text-xl sm:text-2xl md:text-3xl bg-gradient-to-r from-cyan-500 to-purple-500 bg-clip-text tracking-tight text-transparent font-bold"
+                    className="text-lg sm:text-xl md:text-2xl lg:text-3xl bg-gradient-to-r from-cyan-500 to-purple-500 bg-clip-text tracking-tight text-transparent font-bold"
                     variants={titleVariants}
                     initial="initial"
                     animate="animate"
@@ -69,7 +69,7 @@ const Header = () => {
                 </motion.h1>
 
                 <motion.div
-                    className="flex items-center justify-center gap-4 sm:gap-6 text-xl sm:text-2xl"
+                    className="flex items-center justify-center gap-3 sm:gap-4 md:gap-6 text-lg sm:text-xl md:text-2xl"
                     variants={iconContainerVariants}
                     initial="initial"
                     animate="animate"

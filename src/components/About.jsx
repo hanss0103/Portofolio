@@ -22,7 +22,7 @@ const About = () => {
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.8, delay: 0.2 }}
-                    className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed text-justify"
+                    className="text-base sm:text-lg text-gray-700 dark:text-gray-300 leading-relaxed text-justify"
                 >
                     Saya <span className="font-semibold text-cyan-500">Rayhan</span>, 
                     seorang <span className="font-medium">Junior Web Developer</span> 

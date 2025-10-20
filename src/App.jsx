@@ -14,7 +14,7 @@ function App() {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-purple-950 text-white">
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-purple-950 text-white overflow-x-hidden">
       <Header />
       <Hero />
       <About />

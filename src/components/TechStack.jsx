@@ -86,18 +86,18 @@ const TechStack = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.3 }}
-          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 text-center"
+          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 sm:gap-8 text-center"
         >
           {techs.map((tech, idx) => (
             <motion.div
               key={idx}
               variants={item}
               style={{ "--tw-shadow-color": tech.color }}
-              className="group relative max-w-[150px] mx-auto p-6 bg-black/40 rounded-2xl shadow-md 
-                         hover:shadow-[0_0_25px_var(--tw-shadow-color)] hover:scale-110 
-                         transform transition duration-300"
+              className="group relative max-w-[120px] sm:max-w-[140px] md:max-w-[150px] mx-auto p-4 sm:p-6 bg-black/40 rounded-2xl shadow-md
+                          hover:shadow-[0_0_25px_var(--tw-shadow-color)] hover:scale-110
+                          transform transition duration-300"
             >
-              <div className="text-4xl mb-3 flex justify-center">{tech.icon}</div>
+              <div className="text-3xl sm:text-4xl mb-3 flex justify-center">{tech.icon}</div>
               <p className="text-white">{tech.name}</p>
 
               {/* Tooltip */}
