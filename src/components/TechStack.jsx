@@ -20,27 +20,29 @@ import {
   SiTailwindcss,
   SiPostman,
   SiBootstrap,
+  SiApachemaven,
 } from "react-icons/si";
 
 const techs = [
-  { icon: <SiC color="#283593" />, name: "C", color: "#283593", desc: "General-purpose programming language" },
-  { icon: <SiCplusplus color="#00599C" />, name: "C++", color: "#00599C", desc: "Object-oriented programming language" },
-  { icon: <SiJavascript color="#F7DF1E" />, name: "JavaScript", color: "#F7DF1E", desc: "Web interactivity and logic" },
-  { icon: <FaHtml5 color="#E34F26" />, name: "HTML", color: "#E34F26", desc: "Web structure markup language" },
-  { icon: <FaCss3Alt color="#1572B6" />, name: "CSS", color: "#1572B6", desc: "Web styling and layout" },
-  { icon: <FaJava color="#E76F00" />, name: "Java", color: "#E76F00", desc: "Backend development language" },
-  { icon: <FaReact color="#61DBFB" />, name: "React", color: "#61DBFB", desc: "Frontend JavaScript library" },
-  { icon: <SiSpringboot color="#6DB33F" />, name: "Spring Boot", color: "#6DB33F", desc: "Java backend framework" },
-  { icon: <SiThymeleaf color="#005F0F" />, name: "Thymeleaf", color: "#005F0F", desc: "Java templating engine" },
-  { icon: <SiMysql color="#4479A1" />, name: "MySQL", color: "#4479A1", desc: "Relational database system" },
-  { icon: <SiPostgresql color="#336791" />, name: "PostgreSQL", color: "#336791", desc: "Advanced SQL database" },
-  { icon: <SiSwagger color="#85EA2D" />, name: "Swagger", color: "#85EA2D", desc: "API documentation tool" },
-  { icon: <SiPostman color="#FF6C37" />, name: "Postman", color: "#FF6C37", desc: "API testing tool" },
-  { icon: <SiBootstrap color="#7952B3" />, name: "Bootstrap", color: "#7952B3", desc: "CSS framework for responsive UI" },
-  { icon: <FaGitAlt color="#F05032" />, name: "Git", color: "#F05032", desc: "Version control system" },
-  { icon: <FaGithub color="#181717" />, name: "GitHub", color: "#181717", desc: "Code hosting platform" },
-  { icon: <SiVercel color="#e5e5e5" />, name: "Vercel", color: "#e5e5e5", desc: "Frontend deployment platform" },
-  { icon: <SiTailwindcss color="#06B6D4" />, name: "Tailwind", color: "#06B6D4", desc: "Utility-first CSS framework" },
+  { icon: <SiC color="#283593" />, name: "C", color: "#283593", desc: "Bahasa pemrograman general-purpose" },
+  { icon: <SiCplusplus color="#00599C" />, name: "C++", color: "#00599C", desc: "Bahasa pemrograman berorientasi objek" },
+  { icon: <SiJavascript color="#F7DF1E" />, name: "JavaScript", color: "#F7DF1E", desc: "Bahasa untuk interaktivitas web" },
+  { icon: <FaHtml5 color="#E34F26" />, name: "HTML", color: "#E34F26", desc: "Bahasa markup untuk struktur web" },
+  { icon: <FaCss3Alt color="#1572B6" />, name: "CSS", color: "#1572B6", desc: "Bahasa untuk tata letak dan gaya web" },
+  { icon: <FaJava color="#E76F00" />, name: "Java", color: "#E76F00", desc: "Bahasa utama untuk backend development" },
+  { icon: <FaReact color="#61DBFB" />, name: "React", color: "#61DBFB", desc: "Library JavaScript untuk antarmuka pengguna" },
+  { icon: <SiSpringboot color="#6DB33F" />, name: "Spring Boot", color: "#6DB33F", desc: "Framework Java untuk backend" },
+  { icon: <SiThymeleaf color="#005F0F" />, name: "Thymeleaf", color: "#005F0F", desc: "Template engine untuk Java" },
+  { icon: <SiMysql color="#4479A1" />, name: "MySQL", color: "#4479A1", desc: "Sistem manajemen basis data relasional" },
+  { icon: <SiPostgresql color="#336791" />, name: "PostgreSQL", color: "#336791", desc: "Database SQL tingkat lanjut" },
+  { icon: <SiSwagger color="#85EA2D" />, name: "Swagger", color: "#85EA2D", desc: "Alat dokumentasi untuk REST API" },
+  { icon: <SiPostman color="#FF6C37" />, name: "Postman", color: "#FF6C37", desc: "Alat untuk pengujian API" },
+  { icon: <SiBootstrap color="#7952B3" />, name: "Bootstrap", color: "#7952B3", desc: "Framework CSS untuk UI responsif" },
+  { icon: <SiApachemaven color="#C71A36" />, name: "Maven", color: "#C71A36", desc: "Build automation & dependency manager untuk Java" },
+  { icon: <FaGitAlt color="#F05032" />, name: "Git", color: "#F05032", desc: "Sistem kontrol versi" },
+  { icon: <FaGithub color="#181717" />, name: "GitHub", color: "#181717", desc: "Platform hosting kode dan kolaborasi" },
+  { icon: <SiVercel color="#e5e5e5" />, name: "Vercel", color: "#e5e5e5", desc: "Platform untuk deployment frontend" },
+  { icon: <SiTailwindcss color="#06B6D4" />, name: "Tailwind", color: "#06B6D4", desc: "Framework CSS berbasis utilitas" },
 ];
 
 const container = {
@@ -57,7 +59,12 @@ const container = {
 
 const item = {
   hidden: { opacity: 0, scale: 0.9, y: 10 },
-  show: { opacity: 1, scale: 1, y: 0, transition: { duration: 0.4, ease: "easeOut" } },
+  show: {
+    opacity: 1,
+    scale: 1,
+    y: 0,
+    transition: { duration: 0.4, ease: "easeOut" },
+  },
 };
 
 const TechStack = () => {
