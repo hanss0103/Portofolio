@@ -21,6 +21,7 @@ import {
   SiPostman,
   SiBootstrap,
   SiApachemaven,
+  SiVite, // ✅ Tambahkan ikon Vite di sini
 } from "react-icons/si";
 
 const techs = [
@@ -31,6 +32,7 @@ const techs = [
   { icon: <FaCss3Alt color="#1572B6" />, name: "CSS", color: "#1572B6", desc: "Bahasa untuk tata letak dan gaya web" },
   { icon: <FaJava color="#E76F00" />, name: "Java", color: "#E76F00", desc: "Bahasa utama untuk backend development" },
   { icon: <FaReact color="#61DBFB" />, name: "React", color: "#61DBFB", desc: "Library JavaScript untuk antarmuka pengguna" },
+  { icon: <SiVite color="#646CFF" />, name: "Vite", color: "#646CFF", desc: "Build tool modern untuk proyek frontend" }, // ✅ Vite ditambahkan
   { icon: <SiSpringboot color="#6DB33F" />, name: "Spring Boot", color: "#6DB33F", desc: "Framework Java untuk backend" },
   { icon: <SiThymeleaf color="#005F0F" />, name: "Thymeleaf", color: "#005F0F", desc: "Template engine untuk Java" },
   { icon: <SiMysql color="#4479A1" />, name: "MySQL", color: "#4479A1", desc: "Sistem manajemen basis data relasional" },
